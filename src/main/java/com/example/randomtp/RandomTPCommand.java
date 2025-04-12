@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * 处理/randomtp命令执行
+ * 处理 /randomtp 命令执行
  */
 public class RandomTPCommand implements CommandExecutor {
     private final RandomTPPlugin plugin;
@@ -30,6 +30,7 @@ public class RandomTPCommand implements CommandExecutor {
         }
 
         player.sendMessage("§e正在寻找安全位置...");
+        // 在异步线程中执行位置查找
         new LocationFinder(plugin, player).runTaskAsynchronously(plugin);
         return true;
     }
