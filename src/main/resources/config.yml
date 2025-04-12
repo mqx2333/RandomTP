@@ -1,0 +1,7 @@
+config-version: 1
+teleport:
+  min-x: -10000
+  max-x: 10000
+  min-z: -10000
+  max-z: 10000
+  max-attempts: 50

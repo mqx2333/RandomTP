@@ -1,0 +1,12 @@
+name: RandomTP
+version: ${project.version}
+main: com.example.randomtp.RandomTPPlugin
+api-version: 1.20
+commands:
+  randomtp:
+    description: 随机传送到安全位置
+    usage: /randomtp
+permissions:
+  randomtp.use:
+    description: 允许使用随机传送命令
+    default: true
